@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js"></script>
+  <script>
+var imagesArray = ["car.jpg", "tiger1.jpg","Lion.jpg","squirrel.jpg","rhino.jpg","bird.jpg"];
+function displayImage(){
+    
+   var  num= Math.floor(Math.random() *6) 
+   document.canvas.src = imagesArray[num];
+   displayImage = noop;}
+  function noop() {};
+ </script>
+<title>html</title>
+</head>
+<body>
+<form name="imageForm">
+  <table border=3>
+  <tr>
+  <td> <input onclick="displayImage();" type=button value="who are you in your past life">
+ </td>
+  </tr>
+  <tr><td>
+ <img src="blank.jpg" name="canvas">
+ </td>
+</tr>
+ </table>
+</form>
+</body>
+</html>
